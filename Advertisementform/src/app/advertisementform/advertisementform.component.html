@@ -1,0 +1,55 @@
+<div class="container-fluid mb-5">
+    <h1>Advertisement enrollment form</h1>
+    <form #f="ngForm" (ngSubmit)="data(f)" novalidate>
+    <!--{{userForm.value|json}}
+    <hr />
+    {{Usermodel|json}}-->
+
+      <div class="form-group">
+        <label>Title</label>
+        <input type="text" class="form-control" name="title" [(ngModel)]="Usermodel.title">
+      </div>
+      <br>
+      
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" name="userName" [(ngModel)]="Usermodel.name">
+      </div>
+      <br>
+    
+      <div class="form-group">
+        <select class="custom-select" name="category" [(ngModel)]="Usermodel.category">
+          <option selected>category</option>
+          <option *ngFor="let category of categories">{{category}}</option>
+        </select>
+      </div>
+    <br>
+      <div class="form-group">
+        <label>Description</label>
+        <input type="text" class="form-control" name="description" [(ngModel)]="Usermodel.description">
+      </div>
+    <br>
+      <button (click)="sendinfotocomp()"  class="btn btn-primary" type="submit">Submit</button>
+    </form>
+    </div>
+
+   <!--<div class="container">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let arraydata of arraydata">
+                    <td><span>{{arraydata.title}}</span></td>
+                    <td><span>{{arraydata.userName}}</span></td>
+                    <td><span>{{arraydata.category}}</span></td>
+                    <td><span>{{arraydata.description}}</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>-->
