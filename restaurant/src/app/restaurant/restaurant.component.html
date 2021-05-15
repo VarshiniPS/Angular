@@ -1,0 +1,33 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <input #myrestaurant type="text" class="form-control" [placeholder]="CreateRestaurant" name="promenu" (ngModel)="promenu">
+            <button class="btn btn-danger" (click)="onclick(myrestaurant)">Create
+                Restaurant</button>
+                <table class="table table-bordered">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Sr.No</th>
+                            <th>Restaurant name</th>
+                            <th>Delete Restaurant</th>
+                            <th>Edit Restaurant</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of restaurantList;index as no">
+                            <td>{{no+1}}</td>
+                            <td (click)="handleClick($event)">{{item}}</td>
+                            <td>
+                                <button (click)="onDelete(on)" class="btn btn-success">Remove Restaurant</button>
+                            </td>
+                            <td>
+                                <button (click)="onDelete(no)" class="btn btn-success">Edit Restaurant</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+</div>
+
+<app-user [post]="restaurantList"></app-user>
