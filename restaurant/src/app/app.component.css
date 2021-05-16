@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+
+.imgcls{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center
+}
+
+.navbar-header{
+
+    width: 1600px;
+    margin: 0 auto;
+    float: right;
+    padding: 20px;
+    top: 20px;
+}
+
