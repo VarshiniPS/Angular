@@ -23,4 +23,14 @@ onclick(promenu:{value:any}){
 onDelete(del:number){
   this.restaurantList.splice(del,1);
 }
+
+bookres(){
+  this.successful_booking_msg;
+}
+
+handleClick(event:any){
+  if(event.view.getSelection().type!=='Range'){
+    alert("you have booked successfully");
+  }
+}
 }

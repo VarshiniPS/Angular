@@ -1,9 +1,10 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-12">
-            <input #myrestaurant type="text" class="form-control" [placeholder]="CreateRestaurant" name="promenu" (ngModel)="promenu">
+            <input #myrestaurant type="text" class="form-control" [placeholder]="CreateRestaurant" name="promenu" [(ngModel)]="promenu">
             <button class="btn btn-danger" (click)="onclick(myrestaurant)">Create
                 Restaurant</button>
+
                 <table class="table table-bordered">
                     <thead class="thead-light">
                         <tr>
@@ -18,7 +19,7 @@
                             <td>{{no+1}}</td>
                             <td (click)="handleClick($event)">{{item}}</td>
                             <td>
-                                <button (click)="onDelete(on)" class="btn btn-success">Remove Restaurant</button>
+                                <button (click)="onDelete(no)" class="btn btn-success">Remove Restaurant</button>
                             </td>
                             <td>
                                 <button (click)="onDelete(no)" class="btn btn-success">Edit Restaurant</button>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { EnrollmentService } from '../enrollment.service';
 @Component({
   selector: 'app-editproduct',
   templateUrl: './editproduct.component.html',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditproductComponent implements OnInit {
 
-  constructor() { }
+  tabrxd;
 
-  ngOnInit(): void {
+  constructor(private _enrollmentServ:EnrollmentService) { }
+
+  ngOnInit() {
+    this._enrollmentServ.rendertable.subscribe((arrmsg)=>{
+      console.log(arrmsg);
+      this.tabrxd=arrmsg;
+    });
+  
+    
+  
   }
-
 }

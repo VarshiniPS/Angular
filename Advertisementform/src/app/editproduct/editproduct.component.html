@@ -1,1 +1,27 @@
-<p>editproduct works!</p>
+<div class="container">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>
+                Actions</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let tabrxd of tabrxd">
+                <td><span>{{tabrxd.title}}</span></td>
+                <td><span>{{tabrxd.userName}}</span></td>
+                <td><span>{{tabrxd.category}}</span></td>
+                <td><span>{{tabrxd.description}}</span></td>
+                <td>
+                    <a href="#">Update</a>&nbsp;<a href="#" >cancel</a>
+                </td>
+             </tr>
+            
+        </tbody>
+    </table>
+</div>

@@ -1,47 +1,8 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-
 .content-wrapper{
-    width: 80%;
-    margin: 4% 10% 5% 10%;
-}
-
-.content-wrapper img{
-    width: 100%;
+    position: fixed;
+    min-width:100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
+    background-size: cover;
 }
-
-.text-wrapper{
-    width: 100%;
-    position: relative;
-    margin-top: -70%;
-}
-
-.text-wrapper h1{
-    text-align: center;
-    color:lightgreen;
-    font-size: 10vw;
-    font-family: 'lobster',cursive;
-}
-
-.navbar-header{
-
-    width: 1600px;
-    margin: 0 ;
-    float: left;
-    padding: 20px;
-    top: 20px;
-}
-
-.navbar-header ul{
-    width: 100%;
-    position: relative;
-    float: right;
-    margin-left: 70%;
-}
-

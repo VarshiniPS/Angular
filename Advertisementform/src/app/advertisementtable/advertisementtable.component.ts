@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Input } from '@angular/core';
 import { EnrollmentService } from '../enrollment.service';
 
 @Component({
@@ -10,7 +9,9 @@ import { EnrollmentService } from '../enrollment.service';
 export class AdvertisementtableComponent implements OnInit {
 
  // @Input() tabdata:any;
+ 
   tabrxd;
+
   constructor(private _enrollmentService:EnrollmentService) { }
 
   ngOnInit() {
@@ -19,6 +20,7 @@ export class AdvertisementtableComponent implements OnInit {
       this.tabrxd=arrmsg;
     });
   
+    
   
   }
 
@@ -30,8 +32,10 @@ export class AdvertisementtableComponent implements OnInit {
     
   //}
 
-  deleteadv(index){
-    this.tabrxd.splice(index);
+  deleteadv(index:number){
+    this.tabrxd.splice(index,1);
   }
+
+ 
 
 }

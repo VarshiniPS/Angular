@@ -16,6 +16,10 @@ constructor(){
   
 }
 
+gotoadmin(){
+  window.open(this.url+'/admin');
+}
+
 ngOnInit(){
 
 }

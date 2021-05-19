@@ -1,29 +1,19 @@
-<div class="imgdiv">
-
 <link rel="stylesheet" href="app.component.css">
-<nav class="navbar">
+
   <div class="content-wrapper">
     <img [src]="url">
     <div class="text-wrapper">
 <h1>Restaurant App</h1>
     </div>
   </div>
-</nav>
 
-<header>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-      <ul>
-        <li>
-          <a (click)="route.displayRoute()" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Admin</a>
-        </li>
-        <li><a  routerLink="/user" routerLinkActive="active">User</a></li>
-      </ul>
-    </div>
-    </div>
-  </nav>
-</header>
+      <nav>
+          <a href="admin/admin.component.html"  (click)="gotoadmin()" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Admin</a>&nbsp;&nbsp;
+          <a  routerLink="/user" routerLinkActive="active">User</a>
+        </nav>
+    
+  
+
 
 <app-admin #route></app-admin>
 <router-outlet></router-outlet>
