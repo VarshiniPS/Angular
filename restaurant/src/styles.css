@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body,app-root{
+height: 100%;
+margin: 0;
+}
+
+
+
+.content-wrapper img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-wrapper{
+    width: 100%;
+    position: relative;
+    margin-top: -70%;
+}
+
+.text-wrapper h1{
+    text-align: center;
+    color:lightgreen;
+    font-size: 10vw;
+    font-family: 'lobster',cursive;
+}
+
+nav a{
+    width: 100%;
+    position: relative;
+    margin-top: -70%;
+    text-decoration: none;
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+nav a:visited,a:link{
+    color:yellow;
+}
+
+nav a:hover{
+    color: lightskyblue;
+    background-color:red;
+}
+
+nav a.active{
+    color: lightskyblue;
+}
