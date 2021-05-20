@@ -1,14 +1,11 @@
 <link rel="stylesheet" href="app.component.css">
 
-  <div class="content-wrapper">
-    <img [src]="url">
-    <div class="text-wrapper">
 <h1>Restaurant App</h1>
-    </div>
-  </div>
+    
+  
 
       <nav>
-          <a href="admin/admin.component.html"  (click)="gotoadmin()" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Admin</a>&nbsp;&nbsp;
+          <a (click)="route.displayRoute()" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Admin</a>&nbsp;&nbsp;
           <a  routerLink="/user" routerLinkActive="active">User</a>
         </nav>
     
