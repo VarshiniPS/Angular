@@ -10,7 +10,7 @@ margin: 0;
 
 
 
-.content-wrapper img{
+/*.content-wrapper img{
     width: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -22,13 +22,11 @@ margin: 0;
     width: 100%;
     position: relative;
     margin-top: -70%;
-}
+}*/
 
-.text-wrapper h1{
+ h1{
     text-align: center;
-    color:lightgreen;
-    font-size: 10vw;
-    font-family: 'lobster',cursive;
+   
 }
 
 nav a{
@@ -41,7 +39,7 @@ nav a{
 }
 
 nav a:visited,a:link{
-    color:yellow;
+    color:black;
 }
 
 nav a:hover{
