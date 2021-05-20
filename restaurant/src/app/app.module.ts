@@ -19,12 +19,15 @@ import { FormsModule } from '@angular/forms';
     MenuComponent,
     RestaurantComponent,
     UserComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+   
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-   FormsModule
+   FormsModule,
+  
    ],
   providers: [],
   bootstrap: [AppComponent]
