@@ -16,12 +16,12 @@ constructor(){
   
 }
 
-gotoadmin(){
-  window.open(this.url+'/admin');
-}
+//gotoadmin(){
+  //window.open(this.url+'/admin');
+//}
 
 ngOnInit(){
 
 }
-url="./assets/rest.jpg";
+//url="./assets/rest.jpg";
 }
